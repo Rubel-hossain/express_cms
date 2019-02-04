@@ -1,0 +1,24 @@
+{
+  "name": "express_cms",
+  "version": "1.0.0",
+  "description": "nodejs and expressjs cms using mongodb",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rubel-hossain/express_cms.git"
+  },
+  "keywords": [
+    "nodejs",
+    "expressjs",
+    "cms"
+  ],
+  "author": "rubel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rubel-hossain/express_cms/issues"
+  },
+  "homepage": "https://github.com/Rubel-hossain/express_cms#readme"
+}
