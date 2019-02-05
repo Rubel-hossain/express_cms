@@ -4,7 +4,9 @@
   "description": "nodejs and expressjs cms using mongodb",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js",
+    "dev": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -20,5 +22,11 @@
   "bugs": {
     "url": "https://github.com/Rubel-hossain/express_cms/issues"
   },
-  "homepage": "https://github.com/Rubel-hossain/express_cms#readme"
+  "homepage": "https://github.com/Rubel-hossain/express_cms#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.0",
+    "mongoose": "^5.4.9",
+    "nodemon": "^1.18.9"
+  }
 }
