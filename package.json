@@ -26,6 +26,7 @@
   "dependencies": {
     "express": "^4.16.4",
     "express-handlebars": "^3.0.0",
+    "flash": "^1.1.0",
     "mongoose": "^5.4.9",
     "nodemon": "^1.18.9"
   }

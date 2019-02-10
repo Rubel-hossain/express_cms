@@ -5,6 +5,7 @@ const exphbs = require("express-handlebars");
 const {mongodb_url} = require("./config");
 const default_routes = require("./routes/default_routes");
 const admin_routes = require("./routes/admin_routes");
+const flash = require("flash");
 
 const app = express();
 app.use(express.json());

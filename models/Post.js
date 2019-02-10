@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
-const Schema = mongoose.Schema();
+const schema = mongoose.Schema;
 
-const PostSchema = new Schema({
+const postSchema = new schema({
      title: {
          type: String,
          required: true
@@ -11,7 +11,7 @@ const PostSchema = new Schema({
          default: "public"
      },
      description: {
-         type: Text,
+         type: String,
          required: true
      },
      creationDate: {
@@ -19,3 +19,5 @@ const PostSchema = new Schema({
          default: Date.now()
      }
 });
+
+module.export = mongoose.model('Post', postSchema)
