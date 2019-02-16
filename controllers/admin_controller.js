@@ -14,12 +14,18 @@ exports.getAdmin = (req,res)=> {
 }
 
 exports.getPosts = (req,res)=> {
-    res.render("admin/posts", { layout: "admin/default"});
+     Post.find().then(posts=>{
+        res.render("admin/posts",{ layout: "admin/default", posts});
+    });
+    
 }
 exports.getAddPost = (req,res)=> {
     res.render("admin/add-post", { layout: "admin/default"});
 }
 
+exports.getEditPost = (req,res)=>{
+    res.render("admin/edit-post", {layout: "admin/default"});
+}
 exports.postAddPost = (req,res)=>{
 
     const title = req.body.title;

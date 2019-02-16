@@ -1,1 +1,36 @@
-<h2>Posts</h2>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+          <div class="page-wrapper p-4">
+              <h2>All Posts</h2>
+              <div class="table-responsive"> 
+              <table class="table table-bordered text-center">
+                 <thead>
+                  <tr>
+                      <th>Post Id</th>
+                      <th>Title</th>
+                      <th>Description</th>
+                      <th>Status</th>
+                      <th>Action</th>
+                  </tr>
+                 </thead>
+                 <tbody>
+                     {{#each posts}}
+                     <tr>
+                         <td>{{_id}}</td>
+                         <td>{{title}}</td>
+                         <td>{{description}}</td>
+                         <td>{{status}}</td>
+                         <td>
+                             <a href="/admin/post/edit/{{_id}}" class="btn btn-success">Edit</a>
+                             <a href="/admin/post/delete/{{_id}}" class="btn btn-danger">Delete</a>
+                         </td>
+                     </tr>
+                     {{/each}}
+                 </tbody>
+              </table>
+              </div>
+          </div>
+        </div>
+    </div>
+</div>

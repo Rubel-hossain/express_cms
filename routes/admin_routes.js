@@ -17,4 +17,7 @@ const admin_controller = require("../controllers/admin_controller");
      .get(admin_controller.getAddPost);
  router.route("/admin/posts/create")
        .post(admin_controller.postAddPost);
+ 
+ router.route("/admin/post/edit/:id")
+       .get(admin_controller.getEditPost);
 module.exports = router;

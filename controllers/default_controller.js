@@ -1,3 +1,5 @@
+
 exports.getIndex = (req,res)=>{
-    res.render("index");
+    req.flash('info', 'Flash is back!');
+    res.render("index",{msg: req.flash("info")});
 }
